@@ -1,0 +1,19 @@
+<div class="genero-form">
+    <h2 class="genero-form__titulo">Nuevo Genero</h2>
+    <form class="genero-form__form">
+        <div class="genero-form__dato">
+            <label class="genero-form__etiqueta">Nombre</label>
+            <input class="genero-form__input" type="text" name="nombre" [(ngModel)]="genero.nombre" required="">
+        </div>
+        <div class="genero-form__botones">
+            <button class="genero-form__boton" [routerLink]="['/generos']">Cancelar</button>
+            <button class="genero-form__boton" (click)="crearGenero()" *ngIf="!genero.id_genero else elseBlock">Agregar</button>
+
+            <ng-template #elseBlock>
+                <button class="genero-form__boton" (click)="modificarGenero()">Editar</button>
+            </ng-template>
+        </div>
+    </form>
+
+
+</div>

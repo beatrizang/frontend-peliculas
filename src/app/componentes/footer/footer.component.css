@@ -1,0 +1,31 @@
+.footer{
+    align-items: center;
+    background: var(--bordo);
+    color: var(--amarillo-claro);
+
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.contacto{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.contacto__item{
+    padding-right: 2rem;
+}
+
+.contacto__icono{
+    color: var(--amarillo-claro);
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.contacto__icono:hover{
+    opacity: 0.8;
+}

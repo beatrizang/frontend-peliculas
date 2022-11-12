@@ -1,0 +1,16 @@
+<section class="peliculas" id="peliculas">
+    <div class="pelicula" *ngFor="let pelicula of peliculas">
+        <img class="pelicula__imagen" src="" alt="">
+        <div class="pelicula__contenido">
+            <h2 class="pelicula__titulo">{{pelicula.titulo}}</h2>
+
+            <p class="pelicula__estreno">Año de Estreno: {{pelicula.anio_estreno}}</p>
+            <p class="pelicula__duracion">Duración: {{pelicula.duracion}} min</p>
+            <p class="pelicula__descripcion">{{pelicula.descripcion}}</p>
+        </div>
+        <div class="pelicula__iconos">
+            <i (click)="eliminarPelicula(pelicula)"  class="pelicula__icono fa-solid fa-trash"></i>
+            <i [routerLink]="['/peliculas/form',pelicula.id_pelicula]" class="pelicula__icono fa-solid fa-pen"></i>
+        </div>
+    </div>
+</section>

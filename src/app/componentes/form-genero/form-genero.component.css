@@ -1,0 +1,64 @@
+.genero-form{
+    align-items: center;
+    background: var(--bordo);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.genero-form__titulo{
+    color: var(--amarillo-claro);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.genero-form__dato{
+    background: var(--amarillo-claro);
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+}
+
+.genero-form__form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.genero-form__etiqueta{
+    color: var(--bordo);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.genero-form__input{
+    background: var(--amarillo-claro);
+    border: none;
+    margin-top: 0.2rem;
+    outline: none;
+}
+
+.genero-form__botones{
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.genero-form__boton{
+    background: var(--amarillo-claro);
+    border: 1px solid var(--amarillo-claro);
+    border-radius: 1rem;
+    color: var(--bordo);
+    cursor: pointer;
+    font-weight: 700;
+    margin-right: 0.5rem;
+    padding: 0.8rem;
+}
+
+.genero-form__boton:hover{
+    background: var(--bordo);
+    color: var(--amarillo-claro);
+    transition: 0.3s;
+}

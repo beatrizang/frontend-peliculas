@@ -1,0 +1,23 @@
+
+<div class="menu">
+    <ul class="menu__lista">
+        <li class="menu__item"><a class="menu__link" [routerLink]="['/generos/form']">Nuevo Genero</a></li>
+        <li class="menu__item"><a class="menu__link" [routerLink]="['/inicio']">Volver</a></li>
+    </ul>
+</div>
+<section class="generos" id="generos">
+    <table class="generos__tabla">
+        <tr class="generos__fila">
+            <td class="generos__columna">ID</td>
+            <td class="generos__columna">Nombre</td>
+            <td class="generos__columna">Editar</td>
+            <td class="generos__columna">Eliminar</td>
+        </tr>
+        <tr class="generos__fila" *ngFor="let genero of generos">
+            <td class="generos__columna">{{genero.id_genero}}</td>
+            <td class="generos__columna">{{genero.nombre}}</td>
+            <td class="generos__columna"><i [routerLink]="['/generos/form',genero.id_genero]" class="generos__icono fa-solid fa-pen"></i></td>
+            <td class="generos__columna"><i (click)="eliminarGenero(genero)" class="generos__icono fa-solid fa-trash"></i></td>
+        </tr>
+    </table>
+</section>

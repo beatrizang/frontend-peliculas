@@ -1,0 +1,49 @@
+.header{
+    align-items: center;
+    background: var(--bordo);
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    width: 100%;
+}
+
+.header__titulo{
+    color: var(--amarillo-claro);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 2rem;
+}
+
+.menu{
+    display: flex
+}
+.menu__item{
+    padding-right: 1rem;
+}
+
+.menu__link{
+    color: var(--amarillo-claro);
+    font-size: 1.2rem;
+}
+
+.menu__link:hover{
+    opacity: 0.8;
+}
+
+.menu__login{
+    background: var(--amarillo-claro);
+    border: none;
+    border: 1px solid var(--amarillo-claro);
+    border-radius: 1rem;
+    color: var(--bordo);
+    cursor: pointer;
+    font-weight: 700;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+.menu__login:hover{
+    background: var(--bordo);
+    color: var(--amarillo-claro);
+    transition: 0.3s;
+}

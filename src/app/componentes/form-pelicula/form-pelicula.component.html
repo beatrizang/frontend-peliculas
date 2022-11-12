@@ -1,0 +1,25 @@
+<div class="nueva-pelicula">
+    <h2 class="nueva-pelicula__titulo">Nueva Pelicula</h2>
+    <form (ngSubmit)="crearPelicula()" class="nueva-pelicula__form">
+        <div class="nueva-pelicula__dato">
+            <label class="nueva-pelicula__etiqueta">Titulo</label>
+            <input class="nueva-pelicula__input" type="text" name="titulo" [(ngModel)]="pelicula.titulo" required>
+        </div>
+        <div class="nueva-pelicula__dato">
+            <label class="nueva-pelicula__etiqueta" for="">Año de Estreno</label>
+            <input class="nueva-pelicula__input" type="number" name="anioEstreno" [(ngModel)]="pelicula.anio_estreno" required>
+        </div>
+        <div class="nueva-pelicula__dato">
+            <label class="nueva-pelicula__etiqueta" for="">Duracion</label>
+            <input class="nueva-pelicula__input" type="number" name="duracion" [(ngModel)]="pelicula.duracion" required>
+        </div>
+        <div class="nueva-pelicula__botones">
+            <button class="nueva-pelicula__boton" [routerLink]="['/inicio']">Cancelar</button>
+            <button class="nueva-pelicula__boton" (click)="crearPelicula()" *ngIf="!pelicula.id_pelicula else elseBlock">Agregar</button>
+
+            <ng-template #elseBlock>
+                <button class="nueva-pelicula__boton" (click)="modificarPelicula()">Editar</button>
+            </ng-template>
+        </div>
+    </form>
+</div>

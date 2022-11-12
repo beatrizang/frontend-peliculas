@@ -1,0 +1,79 @@
+.peliculas{
+    background: var(--amarillo-claro);
+    margin: 0 auto;
+    padding: 6rem 2rem 2rem 2rem;
+}
+
+.pelicula{
+    align-items:flex-start;
+    display: flex;
+    margin: 2rem auto;
+}
+
+
+.pelicula__titulo{
+    color: var(--bordo);
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.pelicula__estreno{
+    color: var(--azul);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.pelicula__duracion{
+    color: var(--azul);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.pelicula__descripcion{
+    color: var(--azul);
+    line-height: 1.5rem;
+}
+
+.pelicula__contenido{
+    margin: 0 0 0 2rem;
+    width: 50%;
+}
+
+.pelicula__icono{
+    background: var(--bordo);
+    border: 1px solid var(--bordo);
+    border-radius: 10px;
+    color: var(--amarillo-claro);
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+}
+
+.pelicula__icono:hover{
+    background-color: var(--amarillo-claro);
+    color: var(--bordo);
+    transition: 0.3s;
+}
+
+@media screen and (max-width:375px){
+
+    .pelicula{
+        flex-direction: row;
+        flex-direction: column;
+    }
+
+    .pelicula__iconos{
+        display: flex;
+    }
+
+    .pelicula__titulo{
+        font-size: 1.7rem;
+    }
+    
+    .pelicula__contenido{
+        margin: 0;
+        padding-top: 1rem;
+        width: auto;
+    }
+}

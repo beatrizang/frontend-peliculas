@@ -1,0 +1,53 @@
+.menu{
+    background: var(--amarillo-claro);
+    position: fixed;
+    width: 100%;
+}
+
+.menu__lista{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+   
+}
+
+.menu__link{
+    color: var(--bordo);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.generos{
+    align-items: center;
+    background: var(--bordo);
+    color: var(--bordo);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.generos__tabla{
+    align-items: center;
+    background: var(--amarillo-claro);
+    border-radius: 2rem;
+    justify-content: center;
+    margin: 2rem 20%;
+    width: 100%;
+}
+
+.generos__fila{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.generos__columna{
+    align-items: center;
+    width: 20%;
+}
+
+.generos__icono{
+    cursor: pointer;
+}
